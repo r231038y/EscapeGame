@@ -56,7 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Title\TitlePanel.cs" />
+    <Compile Include="Assets\Script\Manager\Linker.cs" />
+    <Compile Include="Assets\Script\Manager\SceneChanger.cs" />
+    <Compile Include="Assets\Script\Manager\AudioManager.cs" />
     <Compile Include="Assets\Script\PieceScript\Piece.cs" />
+    <Compile Include="Assets\Script\Manager\UIController.cs" />
+    <Compile Include="Assets\Script\Title\TitleScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
