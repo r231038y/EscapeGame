@@ -5,16 +5,25 @@ using UnityEngine;
 public class Linker : MonoBehaviour
 {
     [SerializeField] UIController uIController = null;
-    static public UIController UIController = null;
-
-    static public SceneChanger SceneChanger = null;
+    [SerializeField] AudioManager audioManager = null;
 
     void Start()
     {
-        UIController = uIController;
-        UIController.Initialize();
+        Manager.UIContriller = uIController;
+        Manager.UIContriller.Initialize();
 
-        SceneChanger = GetComponent<SceneChanger>();
-        SceneChanger.Initialize();
+        Manager.SceneChanger = GetComponent<SceneChanger>();
+        Manager.SceneChanger.Initialize();
+
+        Manager.AudioManager = audioManager;
+        Manager.AudioManager.Initialize();
+    }
+
+    public static class Manager
+    {
+        static public UIController UIContriller;
+        static public SceneChanger SceneChanger;
+        static public AudioManager AudioManager;
     }
 }
+

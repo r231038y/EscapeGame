@@ -14,6 +14,6 @@ public class TitlePanel : MonoBehaviour
 
     void StartEscapeGame()
     {
-        Linker.SceneChanger.ChangeScene(SceneChanger.SceneName.RoomScene);
+        Linker.Manager.SceneChanger?.ChangeScene(SceneChanger.SceneName.RoomScene);
     }
 }
