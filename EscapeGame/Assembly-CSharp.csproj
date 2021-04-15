@@ -63,6 +63,8 @@
     <Compile Include="Assets\Script\PieceScript\Piece.cs" />
     <Compile Include="Assets\Script\Manager\UIController.cs" />
     <Compile Include="Assets\Script\Title\TitleScene.cs" />
+    <Compile Include="Assets\Script\ButtonPuzzle\ButtonScript.cs" />
+    <Compile Include="Assets\Script\ButtonPuzzle\ButtonPuzzleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
